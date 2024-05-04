@@ -1,0 +1,17 @@
+#root {
+  padding: 0 !important;
+  margin: 0 auto;
+  --primary-background-color: #111111;
+  --dark-gray-color: #1c1c1c;
+  --grid-border-color: #292929;
+  max-width: 1280px;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+  padding: 0;
+  background-color: #111111;
+}
