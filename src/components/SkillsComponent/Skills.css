@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .scroll {
@@ -25,6 +26,7 @@
   );
 }
 
+
 .tagList {
   white-space: nowrap;
   animation: scroll var(--time) linear infinite;
@@ -39,12 +41,49 @@
   }
 }
 
+
+
 .specItem {
   display: inline-flex;
-  margin: 1rem;
+  margin: 0.5rem;
   background: #1c1c1c;
   color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
   transition: 0.5s;
+}
+
+.scroll2 {
+  position: relative;
+  display: flex;
+  max-width: 700px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    270deg, /* Changed the gradient direction */
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    270deg, /* Changed the gradient direction */
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+}
+
+.tagList.scroller__inner2 {
+  white-space: nowrap;
+  animation: scroll2 var(--time) linear infinite; /* Changed the animation name */
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(-100%); /* Changed the initial translation */
+  }
+  100% {
+    transform: translateX(0); /* Changed the final translation */
+  }
 }
