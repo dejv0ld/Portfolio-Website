@@ -1,9 +1,11 @@
 #root {
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 0 !important;
   margin: 0 auto;
   --primary-background-color: #111111;
   --dark-gray-color: #1c1c1c;
-  --grid-border-color: #292929;
+  --grid-border-color: #1f1f1f;
+  --gray-color: #adadad;
   max-width: 1280px;
 }
 
