@@ -2,6 +2,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import './HomePageGridStyle.css';
+import { BsLinkedin, BsInstagram } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 export const HomePageGrid = () => {
   const [displayText, setDisplayText] = useState('');
@@ -41,13 +43,19 @@ export const HomePageGrid = () => {
   return (
     <div className="m-4">
       <div className="flex flex-col md:flex-row gap-4 mb-4 mt-4">
-        <div className="bg-darkgray p-6 h-96 rounded-lg border border-gridBorderColor md:w-1/4 lg:w-1/4 flex-div1">
+        <div className="bg-darkgray p-6 h-96 rounded-2xl border border-gridBorderColor md:w-1/4 lg:w-1/4 flex-div1">
           {' '}
           <img className='profile-image'
             src=".\src\assets\images\Namnlös design (2).jpg"
             alt="binary code, ones and zeros"
           />
-          <p>David</p>
+          <h2 className="p-3 text-white">David</h2>
+          <div className="flex gap-4 flex-grow-1 justify-center">
+          <BsLinkedin size={30} color="white"/>
+          <FaGithub size={30} color="white"/>
+          <BsInstagram size={30} color="white"/>
+
+          </div>
         </div>
         <div className="bg-darkgray p-4 h-24 md:h-96 lg:h-96 rounded-lg border border-gridBorderColor md:w-1/3 lg:w-1/3 typewriter-div">
           <h1>
