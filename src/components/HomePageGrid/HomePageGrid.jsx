@@ -2,8 +2,9 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import './HomePageGridStyle.css';
-import { BsLinkedin, BsInstagram } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { BsLinkedin, BsInstagram } from 'react-icons/bs';
+import { FaGithub } from 'react-icons/fa';
+import { BiLogoGmail } from 'react-icons/bi';
 
 export const HomePageGrid = () => {
   const [displayText, setDisplayText] = useState('');
@@ -41,20 +42,35 @@ export const HomePageGrid = () => {
   }, [charIndex, isDeleting, stringIndex, strings]);
 
   return (
-    <div className="m-4">
+    <div className="m-6">
       <div className="flex flex-col md:flex-row gap-4 mb-4 mt-4">
         <div className="bg-darkgray p-6 h-96 rounded-2xl border border-gridBorderColor md:w-1/4 lg:w-1/4 flex-div1">
           {' '}
-          <img className='profile-image'
+          <img
+            className="profile-image"
             src=".\src\assets\images\Namnlös design (2).jpg"
-            alt="binary code, ones and zeros"
+            alt="Profile picture of DAvid Johnson"
           />
           <h2 className="p-3 text-white">David</h2>
           <div className="flex gap-4 flex-grow-1 justify-center">
-          <BsLinkedin size={30} color="white"/>
-          <FaGithub size={30} color="white"/>
-          <BsInstagram size={30} color="white"/>
-
+            <BsLinkedin className="icon" size={30} color="white" />
+            <BiLogoGmail
+              className="icon"
+              size={30}
+              color="white"
+              onClick={() => {
+                window.location.href = 'mailto:david_johnson_1992@hotmail.com';
+              }}
+            />
+            {/*Navigate to github page*/}
+            <FaGithub
+              className="icon"
+              size={30}
+              color="white"
+              onClick={() => {
+                window.open('https://github.com/dejv0ld', '_blank');
+              }}
+            />
           </div>
         </div>
         <div className="bg-darkgray p-4 h-24 md:h-96 lg:h-96 rounded-lg border border-gridBorderColor md:w-1/3 lg:w-1/3 typewriter-div">
@@ -67,8 +83,14 @@ export const HomePageGrid = () => {
         </div>
         <div className="bg-darkgray  h-48 md:h-96 lg:h-96 rounded-lg border border-gridBorderColor md:w-5/12 lg:w-5/12 grid-div1">
           <div className="content-container">
-            <h2 className="contact-heading">Contact Me</h2>
-            <button className="contact-button">Click Here</button>
+            <button
+              className="contact-button"
+              onClick={() => {
+                window.location.href = 'mailto:david_johnson_1992@hotmail.com';
+              }}
+            >
+              Connect
+            </button>
           </div>
           <img
             className="coding-image"
@@ -77,18 +99,73 @@ export const HomePageGrid = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div">
-          4
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
+        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+          <div className="img-box">
+            <img
+              src=".\src\assets\images\Namnlös design (2).jpg"
+              alt="profile picture of david"
+            ></img>
+          </div>
+          <div className="custom-content">
+            <h2>Portfolio Website</h2>
+            <p>
+              I built this portfolio website using React and Tailwind CSS. It is
+              a responsive website that showcases my skills and projects.
+            </p>
+            <a href="">Read More</a>
+          </div>
         </div>
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div">
-          5
+        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+          <div className="img-box">
+            <img
+              src=".\src\assets\images\Namnlös design (2).jpg"
+              alt="profile picture of david"
+            ></img>
+          </div>
+          <div className="custom-content">
+            <h2>RepTracker</h2>
+            <p>
+              Cross-platform mobile application built using React Native,
+              TypeScript and Redux Toolkit. It allows users to log their
+              workouts and track their progress using graphs.
+            </p>
+            <a href="">Read More</a>
+          </div>
         </div>
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div">
-          6
+        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+          <div className="img-box">
+            <img
+              src=".\src\assets\images\Namnlös design (2).jpg"
+              alt="profile picture of david"
+            ></img>
+          </div>
+          <div className="custom-content">
+            <h2>Card 1</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+              magnam perferendis quibusdam soluta totam odio sit! Ipsa iure
+              voluptate neque placeat ab ad quae.
+            </p>
+            <a href="">Read More</a>
+          </div>
         </div>
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
-          7
+        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+          <div className="img-box">
+            <img
+              src=".\src\assets\images\Namnlös design (2).jpg"
+              alt="profile picture of david"
+            ></img>
+          </div>
+          <div className="custom-content">
+            <h2>Card 1</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+              magnam perferendis quibusdam soluta totam odio sit! Ipsa iure
+              voluptate neque placeat ab ad quae.
+            </p>
+            <a href="">Read More</a>
+          </div>
         </div>
       </div>
     </div>
