@@ -16,7 +16,7 @@ const StyledParagraph = styled.p`
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
-
+  margin: 3rem;
   `;
 
 export const HeadingComponent = () => {

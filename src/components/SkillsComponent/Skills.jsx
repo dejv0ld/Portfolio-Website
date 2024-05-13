@@ -2,7 +2,9 @@ import './Skills.css';
 
 export const Skills = () => {
   return (
-    <div className="skillsContainer">
+        <section className="skillsContainer">
+      <h1 className="skills-heading">My Skills</h1>
+
       <div className="scroll" style={{ '--time': '20s' }}>
         <ul className="tagList scroller__inner">
           <li className="specItem">HTML</li>
@@ -14,6 +16,15 @@ export const Skills = () => {
           <li className="specItem">TypeScript</li>
           <li className="specItem">REACT</li>
           <li className="specItem">Tailwind</li>
+          <li className="specItem">SQL</li>
+          <li className="specItem">NoSQL</li>
+          <li className="specItem">Node</li>
+          <li className="specItem">Vue.js</li>
+          <li className="specItem">React Native</li>
+          <li className="specItem">Express.js</li>
+          <li className="specItem">APIs</li>
+          <li className="specItem">SPA</li>
+          <li className="specItem">Git</li>
         </ul>
         <ul className="tagList scroller__inner">
           <li className="specItem">HTML</li>
@@ -25,9 +36,18 @@ export const Skills = () => {
           <li className="specItem">TypeScript</li>
           <li className="specItem">REACT</li>
           <li className="specItem">Tailwind</li>
+          <li className="specItem">SQL</li>
+          <li className="specItem">NoSQL</li>
+          <li className="specItem">Node</li>
+          <li className="specItem">Vue.js</li>
+          <li className="specItem">React Native</li>
+          <li className="specItem">Express.js</li>
+          <li className="specItem">APIs</li>
+          <li className="specItem">SPA</li>
+          <li className="specItem">Git</li>
         </ul>
       </div>
-      <div className="scroll2" style={{ '--time': '20s' }}>
+{/*       <div className="scroll2" style={{ '--time': '20s' }}>
         <ul className="tagList scroller__inner2">
           <li className="specItem">SQL</li>
           <li className="specItem">NoSQL</li>
@@ -50,7 +70,7 @@ export const Skills = () => {
           <li className="specItem">SPA</li>
           <li className="specItem">Git</li>
         </ul>
-      </div>
-    </div>
+      </div> */}
+    </section>
   );
 };

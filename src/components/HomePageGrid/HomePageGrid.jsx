@@ -42,8 +42,10 @@ export const HomePageGrid = () => {
   }, [charIndex, isDeleting, stringIndex, strings]);
 
   return (
-    <div className="m-6">
-      <div className="flex flex-col md:flex-row gap-4 mb-4 mt-4">
+    <section className="m-6">
+            <h1 className="visually-hidden">Home Page</h1>
+
+      <section className="flex flex-col md:flex-row gap-4 mb-4 mt-4">
         <div className="bg-darkgray p-6 h-96 rounded-2xl border border-gridBorderColor md:w-1/4 lg:w-1/4 flex-div1">
           {' '}
           <img
@@ -89,7 +91,7 @@ export const HomePageGrid = () => {
                 window.location.href = 'mailto:david_johnson_1992@hotmail.com';
               }}
             >
-              Connect
+              Contact
             </button>
           </div>
           <img
@@ -98,8 +100,10 @@ export const HomePageGrid = () => {
             alt="binary code, ones and zeros"
           />
         </div>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
+      </section>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
+      <h2 className="visually-hidden">Projects</h2> {/* Add a hidden heading for accessibility */}
+
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
@@ -141,7 +145,7 @@ export const HomePageGrid = () => {
             ></img>
           </div>
           <div className="custom-content">
-            <h2>Card 1</h2>
+            <h2>PlotEye</h2>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
               magnam perferendis quibusdam soluta totam odio sit! Ipsa iure
@@ -167,7 +171,7 @@ export const HomePageGrid = () => {
             <a href="">Read More</a>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };

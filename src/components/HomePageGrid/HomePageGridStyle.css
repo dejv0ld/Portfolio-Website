@@ -18,6 +18,17 @@
   }
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .typewriter-div {
   justify-content: center;
   align-items: center;
@@ -132,7 +143,7 @@ button:hover {
 .bottom-grid-container .custom-card .img-box {
   position: absolute;
   top: 20px;
-  width: 78%;
+  width: 92%;
   height: 78%;
   background: #333;
   border-radius: 1rem;
