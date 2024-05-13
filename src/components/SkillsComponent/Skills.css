@@ -3,7 +3,7 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin: 0 1rem 8rem 1rem;
+  margin: 0 1rem 8rem 1.5rem;
 }
 
 .skills-heading {
@@ -17,7 +17,7 @@
 .scroll {
   position: relative;
   display: flex;
-  max-width: 78rem;
+  max-width: 100%;
   overflow: hidden;
   -webkit-mask-image: linear-gradient(
     90deg,
@@ -59,26 +59,7 @@
   transition: 0.5s;
 }
 
-.scroll2 {
-  position: relative;
-  display: flex;
-  max-width: 44rem;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(
-    270deg,
-    /* Changed the gradient direction */ transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-  mask-image: linear-gradient(
-    270deg,
-    /* Changed the gradient direction */ transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-}
+
 
 .tagList.scroller__inner2 {
   white-space: nowrap;
@@ -95,9 +76,9 @@
 }
 
 /* This will apply when the screen width is 600px or less */
-@media (max-width: 700px) {
-  .scroll,
-  .scroll2 {
+/* @media (max-width: 700px) {
+  .scroll
+   {
     max-width: 100%;
   }
-}
+} */

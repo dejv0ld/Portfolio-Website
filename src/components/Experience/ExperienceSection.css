@@ -1,0 +1,17 @@
+/* .experience-section {
+
+ margin: 0 0rem 8rem 1.5rem;
+} */
+
+.experience-heading {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.experience-sub-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-color);}
