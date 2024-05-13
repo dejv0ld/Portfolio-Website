@@ -2,16 +2,16 @@
 
 View the Website
 
-Step 1
+Step 1:
 Navigate to portfolio-website folder, write "cd portfolio-website" in the teminal.
 
-Step 2
+Step 2:
 Run "npm install" in the terminal.
 
-Step 3
+Step 3:
 Run the local server by writing "npm run dev" in the terminal.
 
-Step 4
+Step 4:
 Ctrl + Leftclick the localhost adress to view the website.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
