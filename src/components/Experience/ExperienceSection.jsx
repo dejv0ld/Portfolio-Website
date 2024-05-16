@@ -6,7 +6,7 @@ export const ExperienceSection = () => {
       <h2 className="experience-heading">Experience</h2>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bottom-grid-container">
         <h3 className="visually-hidden">Experiences</h3>{' '}
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
+        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor md:col-span-2 lg:col-span-2">
           <h3 className="experience-sub-heading">IT-Högskolan</h3>
           <h4 className="exp-sub-heading">Javascript Development</h4>
           <p className="expercience-paragraph">
@@ -56,13 +56,13 @@ export const ExperienceSection = () => {
             do the work.
           </p>
         </div>
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
+    {/*     <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
           <h3 className="experience-sub-heading">Highschool</h3>
           <h4 className="exp-sub-heading">
             Business and Administration Program
           </h4>
           <p className="expercience-paragraph"></p>
-        </div>
+        </div> */}
       </section>
     </section>
   );
