@@ -43,7 +43,7 @@ export const HomePageGrid = () => {
 
   return (
     <section className="m-6">
-            <h1 className="visually-hidden">Home Page</h1>
+      <h1 className="visually-hidden">Home Page</h1>
 
       <section className="flex flex-col md:flex-row gap-4 mb-4 mt-4">
         <div className="bg-darkgray p-6 h-96 rounded-2xl border border-gridBorderColor md:w-1/4 lg:w-1/4 flex-div1">
@@ -102,24 +102,8 @@ export const HomePageGrid = () => {
         </div>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
-      <h2 className="visually-hidden">Projects</h2> {/* Add a hidden heading for accessibility */}
-
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
-          <div className="img-box">
-            <img
-              src=".\src\assets\images\Namnlös design (2).jpg"
-              alt="profile picture of david"
-            ></img>
-          </div>
-          <div className="custom-content">
-            <h2>Portfolio Website</h2>
-            <p>
-              I built this portfolio website using React and Tailwind CSS. It is
-              a responsive website that showcases my skills and projects.
-            </p>
-            <a href="">Read More</a>
-          </div>
-        </div>
+        <h2 className="visually-hidden">Projects</h2>{' '}
+        {/* Add a hidden heading for accessibility */}
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
@@ -147,9 +131,7 @@ export const HomePageGrid = () => {
           <div className="custom-content">
             <h2>PlotEye</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-              magnam perferendis quibusdam soluta totam odio sit! Ipsa iure
-              voluptate neque placeat ab ad quae.
+              On my internship, I helped rebuild the ploteye webapp as a mobile application. Also helped starting up a new project for a webservice automation tool that did webscraping.
             </p>
             <a href="">Read More</a>
           </div>
@@ -162,11 +144,25 @@ export const HomePageGrid = () => {
             ></img>
           </div>
           <div className="custom-content">
-            <h2>Card 1</h2>
+            <h2>Webshop</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-              magnam perferendis quibusdam soluta totam odio sit! Ipsa iure
-              voluptate neque placeat ab ad quae.
+              As a school assignment, me and some classmates built a fun mockup webshop project where the user needed to finish a small quiz to get access to the space-travel webshop.
+            </p>
+            <a href="">Read More</a>
+          </div>
+        </div>
+        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+          <div className="img-box">
+            <img
+              src=".\src\assets\images\Namnlös design (2).jpg"
+              alt="profile picture of david"
+            ></img>
+          </div>
+          <div className="custom-content">
+            <h2>Portfolio Website</h2>
+            <p>
+              I built this portfolio website using React and Tailwind CSS. It is
+              a responsive website that showcases my skills and projects.
             </p>
             <a href="">Read More</a>
           </div>
