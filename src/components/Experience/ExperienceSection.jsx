@@ -10,11 +10,11 @@ export const ExperienceSection = () => {
           <h3 className="experience-sub-heading">IT-Högskolan</h3>
           <h4 className="exp-sub-heading">Javascript Development</h4>
           <p className="expercience-paragraph">
-            Two years of Higher Vocational Education(Yrkeshögskola) studies to
-            be a Javascript developer. I learned to build scalable and
-            responsive fullstack web and mobile applications. I also learned the
-            importance of agile work, using kanband and scrum methods together
-            with version control with Git/Github.
+            I completed two years of Higher Vocational Education
+            to become a JavaScript developer. I learned to build scalable and
+            responsive full-stack web and mobile applications. I also gained
+            expertise in agile methodologies, including Kanban and Scrum, and
+            became proficient in version control using Git and GitHub.
           </p>
         </div>
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
@@ -33,18 +33,15 @@ export const ExperienceSection = () => {
             Initiated a project to create a web service that scraped portal
             websites for information. Then used automation to send customized
             emails generated with the help of ChatGPTs API to these companies.
-            We built this using python, scarpy and selenium.
           </p>
         </div>
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
           <h3 className="experience-sub-heading">Oriola Sweden AB</h3>
           <h4 className="exp-sub-heading">Teamleader</h4>
           <p className="expercience-paragraph">
-            As a teamleader I was responsible for leading department processes,
-            including staff allocation and daily briefings. Also conducted daily
-            team meetings and provided constructive feedback for continuous
-            improvement. Engaged in improvement efforsts to optimize work flows,
-            and also helped out writing procedures.
+            Responsible for leading department processes, staff allocation and
+            daily briefings. Conducted daily team meetings and provided
+            constructive feedback for continuous improvement, and more.
           </p>
         </div>
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
@@ -56,7 +53,7 @@ export const ExperienceSection = () => {
             do the work.
           </p>
         </div>
-    {/*     <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
+        {/*     <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor">
           <h3 className="experience-sub-heading">Highschool</h3>
           <h4 className="exp-sub-heading">
             Business and Administration Program

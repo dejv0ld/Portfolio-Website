@@ -12,7 +12,7 @@ export const HomePageGrid = () => {
   const [stringIndex, setStringIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  const strings = ['Fullstack Developer.', 'Web Developer.', 'App Developer.'];
+  const strings = ['Fullstack Developer.', 'Software Developer.', 'App Developer.'];
 
   useEffect(() => {
     const currentString = strings[stringIndex];
