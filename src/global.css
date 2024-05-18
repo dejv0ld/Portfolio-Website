@@ -16,3 +16,119 @@ body {
   padding: 0;
   background-color: #111111;
 }
+
+/* global.css */
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 50;
+}
+
+.container {
+  max-width: 1520px; /* Slightly wider than 1280px */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 16px;
+}
+
+.logo-image {
+  height: 32px;
+}
+
+.menu-button {
+  cursor: pointer;
+  background-color: var(
+    --dark-gray-color
+  ); /* Add background color for visibility */
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.hamburger-icon,
+.close-icon {
+  width: 24px;
+  height: 24px;
+  stroke: white; /* Ensure the icon color is white */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay.open {
+  height: 100%;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 51; /* Ensure the close button is above other content */
+}
+
+.close-icon {
+  width: 32px;
+  height: 32px;
+  stroke: white;
+}
+
+.overlay-link {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  margin: 16px 0;
+}
+
+.overlay-link:hover {
+  color: gray;
+}
+
+.active {
+  font-weight: bold;
+}

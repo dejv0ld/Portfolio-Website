@@ -1,13 +1,13 @@
-import { Disclosure, Menu,  } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import flagImage from '../assets/images/flag-of-sweden.png';
-import '../global.css';
-
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link'; // Import HashLink
+import '../global.css'; // Ensure this includes necessary styles like the logo
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'About', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
+  { name: 'Home', href: '/#home', current: true },
+  { name: 'About', href: '/#about', current: false },
+  { name: 'Skills', href: '/#skills', current: false },
+  { name: 'Experience', href: '/#experience', current: false }
 ];
 
 function classNames(...classes) {
@@ -15,98 +15,77 @@ function classNames(...classes) {
 }
 
 export const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   return (
-    <Disclosure as="nav" className="bg-transparent sticky top-0 z-50">
-      {({ open }) => (
-        <>
-          <div className="mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto"
-                    src="./src/assets/images/Logo.png"
-                    alt="Your Company"
-                  />
-                </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? 'bg-gray-900 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-
-
-                {/* Profile dropdown */}
-                <Menu as="div" className="relative ml-3">
-                  <div>
-                    <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                      <span className="absolute -inset-1.5" />
-                      <span className="sr-only">Open user menu</span>
-                      <img
-                        className="h-8 w-8 rounded-full"
-                        src={flagImage}
-                        alt=""
-                      />
-                    </Menu.Button>
-                  </div>
-
-
-
-                </Menu>
-              </div>
-            </div>
-          </div>
-
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+    <nav className="navbar">
+      <div className="container">
+        <div className="logo">
+          <img
+            className="logo-image"
+            src="./src/assets/images/Logo.png"
+            alt="Your Company"
+          />
+        </div>
+        <div className="menu-button" onClick={handleToggle}>
+          <svg
+            className="hamburger-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </div>
+      </div>
+      <div className={`overlay ${open ? 'open' : ''}`}>
+        <button className="close-button" onClick={handleClose}>
+          <svg
+            className="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+        <div className="overlay-content">
+          {navigation.map((item) => (
+            <Link
+              key={item.name}
+              smooth
+              to={item.href}
+              className={classNames(
+                item.current ? 'active' : '',
+                'overlay-link'
+              )}
+              aria-current={item.current ? 'page' : undefined}
+              onClick={handleClose} // Close menu on navigation link click
+            >
+              {item.name}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </nav>
   );
 };

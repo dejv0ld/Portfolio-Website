@@ -29,11 +29,20 @@
   border: 0;
 }
 
+.flex-div1:hover {
+  background-color: #0e0d0d;
+}
+
 .typewriter-div {
   justify-content: center;
   align-items: center;
   display: flex;
   border-radius: 1rem;
+}
+
+.typewriter-div:hover {
+  background-color: #0e0d0d;
+
 }
 
 .typewriter-div > h1 > span {
@@ -61,10 +70,16 @@
   border-radius: 1rem;
 }
 
+
+
 .grid-div1 {
   position: relative;
   border: 2px solid var(--grid-border-color);
   border-radius: 1rem;
+}
+
+.grid-div1:hover {
+  background-color: #0e0d0d;
 }
 
 .grid-div1::after {
@@ -96,14 +111,15 @@ h2 {
 }
 
 .contact-button {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 1rem 2rem;
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+  font-weight: 500;
   border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  font-size: 1.5rem;
 }
 
 button:hover {
@@ -138,6 +154,7 @@ button:hover {
 
 .bottom-grid-container .custom-card:hover {
   height: 24rem;
+  background-color: #0e0d0d;
 }
 
 .bottom-grid-container .custom-card .img-box {
@@ -205,6 +222,22 @@ button:hover {
 }
 
 .bottom-grid-container .custom-card .custom-content a:hover {
+  opacity: 0.8;
+}
+
+.read-more-link {
+  position: relative;
+  top: 15px;
+  display: inline-block;
+  padding: 12px 25px;
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 0.5rem;
+}
+
+.read-more-link:hover {
   opacity: 0.8;
 }
 

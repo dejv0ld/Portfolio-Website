@@ -5,6 +5,7 @@ import './HomePageGridStyle.css';
 import { BsLinkedin, BsInstagram } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
 import { BiLogoGmail } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 
 export const HomePageGrid = () => {
   const [displayText, setDisplayText] = useState('');
@@ -107,7 +108,7 @@ export const HomePageGrid = () => {
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src=".\src\assets\images\Namnlös design (2).jpg"
+              src=".\src\assets\images\RepTracker2.jpg"
               alt="profile picture of david"
             ></img>
           </div>
@@ -118,7 +119,7 @@ export const HomePageGrid = () => {
               TypeScript and Redux Toolkit. It allows users to log their
               workouts and track their progress using graphs.
             </p>
-            <a href="">Read More</a>
+            <Link to="/reptracker" className='read-more-link'>Read More</Link>
           </div>
         </div>
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">

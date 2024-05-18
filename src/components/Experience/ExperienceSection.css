@@ -2,7 +2,9 @@
 
  margin: 0 0rem 8rem 1.5rem;
 } */
-
+.exp-grid-div:hover {
+background-color: #0e0d0d;
+}
 .experience-heading {
   color: white;
   font-size: 3.5rem;

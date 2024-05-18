@@ -6,7 +6,6 @@ import { AboutSection } from '../components/AboutSection/AboutSection.jsx';
 import { Footer } from '../components/Footer/Footer.jsx';
 import { ExperienceSection } from '../components/Experience/ExperienceSection.jsx';
 
-
 export const Home = () => {
   return (
     <div>
@@ -20,12 +19,19 @@ export const Home = () => {
           alignItems: 'center'
         }}
       >
-        <HomePageGrid />
-        <AboutSection />
-        <Skills />
-        <ExperienceSection />
-        <Footer />
 
+          <HomePageGrid />
+        
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="experience">
+          <ExperienceSection />
+        </section>
+        <Footer />
       </main>
     </div>
   );
