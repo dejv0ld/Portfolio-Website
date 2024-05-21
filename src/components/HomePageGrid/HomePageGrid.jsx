@@ -13,7 +13,11 @@ export const HomePageGrid = () => {
   const [stringIndex, setStringIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
 
-  const strings = ['Fullstack Developer.', 'Software Developer.', 'App Developer.'];
+  const strings = [
+    'Fullstack Developer.',
+    'Software Developer.',
+    'App Developer.'
+  ];
 
   useEffect(() => {
     const currentString = strings[stringIndex];
@@ -108,7 +112,7 @@ export const HomePageGrid = () => {
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src=".\src\assets\images\RepTracker2.jpg"
+              src=".\src\assets\images\RepTracker_main2.svg"
               alt="profile picture of david"
             ></img>
           </div>
@@ -119,20 +123,25 @@ export const HomePageGrid = () => {
               TypeScript and Redux Toolkit. It allows users to log their
               workouts and track their progress using graphs.
             </p>
-            <Link to="/reptracker" className='read-more-link'>Read More</Link>
+            <Link to="/reptracker" className="read-more-link">
+              Read More
+            </Link>
           </div>
         </div>
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src=".\src\assets\images\Namnlös design (2).jpg"
+              className="ploteye-img"
+              src=".\src\assets\images\Ploteye_main.svg"
               alt="profile picture of david"
             ></img>
           </div>
           <div className="custom-content">
             <h2>PlotEye</h2>
             <p>
-              On my internship, I helped rebuild the ploteye webapp as a mobile application. Also helped starting up a new project for a webservice automation tool that did webscraping.
+              On my internship, I helped rebuild the ploteye webapp as a mobile
+              application. Also helped starting up a new project for a
+              webservice automation tool that did webscraping.
             </p>
             <a href="">Read More</a>
           </div>
@@ -147,7 +156,9 @@ export const HomePageGrid = () => {
           <div className="custom-content">
             <h2>Webshop</h2>
             <p>
-              As a school assignment, me and some classmates built a fun mockup webshop project where the user needed to finish a small quiz to get access to the space-travel webshop.
+              As a school assignment, me and some classmates built a fun mockup
+              webshop project where the user needed to finish a small quiz to
+              get access to the space-travel webshop.
             </p>
             <a href="">Read More</a>
           </div>

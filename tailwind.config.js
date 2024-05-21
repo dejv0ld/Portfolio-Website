@@ -8,7 +8,8 @@ export default {
       colors: {
         primary: 'var(--primary-background-color)',
         darkgray: 'var(--dark-gray-color)',
-        gridBorderColor: 'var(--grid-border-color)'
+        gridBorderColor: 'var(--grid-border-color)',
+        'custom-gray': '#0e0d0d',
       },
       height: {
         100: '27rem',
