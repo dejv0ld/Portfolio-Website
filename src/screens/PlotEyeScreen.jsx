@@ -1,42 +1,36 @@
 import { Navbar } from '../components/Navbar';
-/*  import styled from 'styled-components';
 
-const Main = styled.main`
-max-width: 1280px;
-margin: 0 auto;
-align-items: center;
-` */
-
-export const RepTracker = () => {
+export const PlotEyeScreen = () => {
   return (
     <div>
       <Navbar />
       <main className="max-w-screen-xl mx-auto items-center">
         <section className="m-6">
-          <h1 className="text-white text-5xl mt-10 mb-10 text-left">
-            RepTracker
-          </h1>
+          <h1 className="text-white text-5xl mt-10 mb-10 text-left">Ploteye</h1>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
-            <h2 className="visually-hidden">RepTracker</h2>{' '}
+            <h2 className="visually-hidden">Ploteye</h2>{' '}
             {/* Add a hidden heading for accessibility */}
             <div className="bg-darkgray p-4 sm:h-96 h-auto rounded-lg border border-gridBorderColor hover:bg-custom-gray">
-              <p className="text-light-gray sm:text-lg text-left">
-                RepTracker is a streamlined fitness application designed to
-                enhance your workout experience by meticulously logging your
-                training sessions and visually tracking your progress through
-                intuitive charts. Committed to simplicity and user-focused
-                design, RepTracker features a minimalistic approach that ensures
-                ease of use from the first interaction. The interface is clean
-                and straightforward, enabling users to focus solely on their
-                training without distractions.
+              <p className="text-light-gray sm:text-lg text-left mt-4">
+                This was an internship project where we collaborated as a team
+                to transform the existing PlotEye web application into a mobile
+                application. The goal of PlotEye is to provide a comprehensive
+                solution for individuals to buy and sell properties without
+                intermediaries. Users can select a plot from the map and click
+                on it to view detailed information, including images and
+                descriptions. They can also place bids directly through the app.
+                Additionally, users have the capability to list their own plots
+                for sale. The app aims to simplify the real
+                estate process, making it more accessible and user-friendly for
+                everyone involved.
               </p>
             </div>
             <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\RepTracker_sub3.png"
+                src=".\src\assets\images\ploteye2.svg"
                 alt="profile picture of david"
-              ></img>
+              />
             </div>
             <div className="bg-darkgray p-4 sm:h-96 h-auto rounded-lg border border-gridBorderColor  hover:bg-custom-gray">
               <div>
@@ -51,14 +45,9 @@ export const RepTracker = () => {
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
                   >
-                    <p className="text-light-gray">TypeScript</p>
+                    <p className="text-light-gray">Javascript</p>
                   </div>
-                  <div
-                    style={{ border: '0.5px solid #adadad' }}
-                    className="rounded-lg pt-2 pb-2 pr-3 pl-3"
-                  >
-                    <p className="text-light-gray">Expo</p>
-                  </div>
+
                   <div
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
@@ -69,31 +58,32 @@ export const RepTracker = () => {
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
                   >
-                    <p className="text-light-gray">RTK-Query</p>
+                    <p className="text-light-gray">Express</p>
                   </div>
                   <div
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
                   >
-                    <p className="text-light-gray">Firebase</p>
+                    <p className="text-light-gray">MongoDb</p>
                   </div>
                 </div>
                 <p className="text-light-gray sm:text-lg text-left mt-4">
                   Utilized React Native for cross-platform development and
-                  TypeScript for type safety. Leveraged Expo for easy app
-                  building and publishing, and Redux for state management and
-                  data fetching. For the database, I chose Firebase for its
-                  real-time synchronization and offline capabilities, which are
-                  well-suited for a mobile application.
+                  JavaScript for building interactive user interfaces. Employed
+                  Redux for efficient state management and data fetching. For
+                  the backend, Express was used for building the server-side
+                  logic and MongoDB for its scalable and flexible database
+                  solutions.
                 </p>
               </div>
             </div>
             <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
+              {' '}
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\RepTracker_sub4.png"
+                src=".\src\assets\images\ploteye1 (1).svg"
                 alt="profile picture of david"
-              ></img>
+              />
             </div>
           </section>
         </section>

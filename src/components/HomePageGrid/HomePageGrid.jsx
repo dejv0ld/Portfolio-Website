@@ -143,7 +143,9 @@ export const HomePageGrid = () => {
               application. Also helped starting up a new project for a
               webservice automation tool that did webscraping.
             </p>
-            <a href="">Read More</a>
+            <Link to="/ploteyescreen" className="read-more-link">
+              Read More
+            </Link>
           </div>
         </div>
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
