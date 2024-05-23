@@ -1,42 +1,37 @@
 import { Navbar } from '../components/Navbar';
-/*  import styled from 'styled-components';
 
-const Main = styled.main`
-max-width: 1280px;
-margin: 0 auto;
-align-items: center;
-` */
-
-export const RepTracker = () => {
+export const PortfolioInfoScreen = () => {
   return (
     <div>
       <Navbar />
       <main className="max-w-screen-xl mx-auto items-center">
         <section className="m-6">
           <h1 className="text-white text-5xl mt-10 mb-10 text-left">
-            RepTracker
+            Portfolio
           </h1>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
-            <h2 className="visually-hidden">RepTracker</h2>{' '}
+            <h2 className="visually-hidden">Ploteye</h2>{' '}
             {/* Add a hidden heading for accessibility */}
             <div className="bg-darkgray p-4 sm:h-96 h-auto rounded-lg border border-gridBorderColor hover:bg-custom-gray">
-              <p className="text-light-gray sm:text-lg text-left">
-                RepTracker is a streamlined fitness application designed to
-                enhance your workout experience by meticulously logging your
-                training sessions and visually tracking your progress through
-                intuitive charts. <br></br><br></br>Committed to simplicity and user-focused
-                design, RepTracker features a minimalistic approach that ensures
-                ease of use from the first interaction. The interface is clean
-                and straightforward, enabling users to focus solely on their
-                training without distractions.
+              <p className="text-light-gray sm:text-lg text-left mt-4">
+                The objective of my portfolio website is to create a
+                comprehensive digital resume that showcases my skills, projects,
+                and professional experience. It is designed to highlight my
+                frontend capabilities as a JavaScript developer and to provide a
+                platform for potential employers and clients to learn more about
+                me. <br></br>
+                <br></br>This portfolio serves as an essential tool for
+                presenting my work and professional identity. The main goals
+                were to design a visually appealing and user-friendly website
+                that clearly communicates my skills and accomplishments.
               </p>
             </div>
             <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\RepTracker_sub3.png"
+                src=".\src\assets\images\Portfolio_sub.png"
                 alt="profile picture of david"
-              ></img>
+              />
             </div>
             <div className="bg-darkgray p-4 sm:h-96 h-auto rounded-lg border border-gridBorderColor  hover:bg-custom-gray">
               <div>
@@ -45,55 +40,54 @@ export const RepTracker = () => {
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
                   >
-                    <p className="text-light-gray">React Native</p>
+                    <p className="text-light-gray">React</p>
                   </div>
                   <div
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
                   >
-                    <p className="text-light-gray">TypeScript</p>
+                    <p className="text-light-gray">Javascript</p>
+                  </div>
+
+                  <div
+                    style={{ border: '0.5px solid #adadad' }}
+                    className="rounded-lg pt-2 pb-2 pr-3 pl-3"
+                  >
+                    <p className="text-light-gray">Tailwindcss</p>
                   </div>
                   <div
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
                   >
-                    <p className="text-light-gray">Expo</p>
+                    <p className="text-light-gray">CSS</p>
                   </div>
                   <div
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
                   >
-                    <p className="text-light-gray">Redux</p>
-                  </div>
-                  <div
-                    style={{ border: '0.5px solid #adadad' }}
-                    className="rounded-lg pt-2 pb-2 pr-3 pl-3"
-                  >
-                    <p className="text-light-gray">RTK-Query</p>
-                  </div>
-                  <div
-                    style={{ border: '0.5px solid #adadad' }}
-                    className="rounded-lg pt-2 pb-2 pr-3 pl-3"
-                  >
-                    <p className="text-light-gray">Firebase</p>
+                    <p className="text-light-gray">Vite</p>
                   </div>
                 </div>
                 <p className="text-light-gray sm:text-lg text-left mt-4">
-                  Utilized React Native for cross-platform development and
-                  TypeScript for type safety. Leveraged Expo for easy app
-                  building and publishing, and Redux for state management and
-                  data fetching. <br></br><br></br>For the database, I chose Firebase for its
-                  real-time synchronization and offline capabilities, which are
-                  well-suited for a mobile application.
+                  I built my portfolio using React for creating dynamic and
+                  responsive user interfaces, and JavaScript to add interactive
+                  functionality. TailwindCSS, combined with CSS, ensures that
+                  the styling is efficient, consistent, and responsive across
+                  different devices.<br></br><br></br> Vite is used for its fast development and
+                  build speeds, providing a smooth and efficient workflow. This
+                  combination of technologies allows me to create a
+                  high-performance, visually appealing, and user-friendly
+                  portfolio website.
                 </p>
               </div>
             </div>
             <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
+              {' '}
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\RepTracker_sub4.png"
+                src=".\src\assets\images\Portfolio_sub2.png"
                 alt="profile picture of david"
-              ></img>
+              />
             </div>
           </section>
         </section>
@@ -101,4 +95,3 @@ export const RepTracker = () => {
     </div>
   );
 };
-/* md:col-span-2 lg:col-span-2 */

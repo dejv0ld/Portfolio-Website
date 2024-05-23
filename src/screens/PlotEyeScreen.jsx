@@ -16,7 +16,7 @@ export const PlotEyeScreen = () => {
                 to transform the existing PlotEye web application into a mobile
                 application. The goal of PlotEye is to provide a comprehensive
                 solution for individuals to buy and sell properties without
-                intermediaries. Users can select a plot from the map and click
+                intermediaries. <br></br><br></br>Users can select a plot from the map and click
                 on it to view detailed information, including images and
                 descriptions. They can also place bids directly through the app.
                 Additionally, users have the capability to list their own plots
@@ -70,7 +70,7 @@ export const PlotEyeScreen = () => {
                 <p className="text-light-gray sm:text-lg text-left mt-4">
                   Utilized React Native for cross-platform development and
                   JavaScript for building interactive user interfaces. Employed
-                  Redux for efficient state management and data fetching. For
+                  Redux for efficient state management and data fetching.<br></br><br></br> For
                   the backend, Express was used for building the server-side
                   logic and MongoDB for its scalable and flexible database
                   solutions.

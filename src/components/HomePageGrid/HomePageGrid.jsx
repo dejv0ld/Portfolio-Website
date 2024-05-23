@@ -168,7 +168,7 @@ export const HomePageGrid = () => {
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src=".\src\assets\images\Namnlös design (2).jpg"
+              src=".\src\assets\images\Portfolio_main.png"
               alt="profile picture of david"
             ></img>
           </div>
@@ -178,7 +178,7 @@ export const HomePageGrid = () => {
               I built this portfolio website using React and Tailwind CSS. It is
               a responsive website that showcases my skills and projects.
             </p>
-            <a href="">Read More</a>
+            <Link to="/portfolioinfoscreen" className="read-more-link">Read More</Link>
           </div>
         </div>
       </section>
