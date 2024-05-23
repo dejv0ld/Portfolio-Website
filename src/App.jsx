@@ -5,6 +5,7 @@ import { Home } from './screens/Home'; // Import the HomePageGrid component
 import { RepTracker } from './screens/RepTracker'; // Import the RepTracker component
 import { PlotEyeScreen } from './screens/PlotEyeScreen'; // Import the PlotEyeScreen component
 import { PortfolioInfoScreen } from './screens/PortfolioInfoScreen';
+import { WebshopScreen } from './screens/WebshopScreen';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             path="/portfolioinfoscreen"
             element={<PortfolioInfoScreen />}
           />
+          <Route path="/webshopscreen" element={<WebshopScreen />} />
         </Routes>
       </div>
     </Router>

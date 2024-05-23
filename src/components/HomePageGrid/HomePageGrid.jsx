@@ -151,7 +151,7 @@ export const HomePageGrid = () => {
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src=".\src\assets\images\Namnlös design (2).jpg"
+              src=".\src\assets\images\webshop_main.png"
               alt="profile picture of david"
             ></img>
           </div>
@@ -162,7 +162,7 @@ export const HomePageGrid = () => {
               webshop project where the user needed to finish a small quiz to
               get access to the space-travel webshop.
             </p>
-            <a href="">Read More</a>
+            <Link to="/webshopscreen" className="read-more-link">Read More</Link>
           </div>
         </div>
         <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
