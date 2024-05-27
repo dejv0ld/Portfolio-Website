@@ -6,11 +6,11 @@ export const PlotEyeScreen = () => {
       <Navbar />
       <main className="max-w-screen-xl mx-auto items-center">
         <section className="m-6">
-          <h1 className="text-white text-5xl mt-10 mb-10 text-left">Ploteye</h1>
+          <h1 className="text-4xl sm:text-5xl mb-8 font-bold text-white text-left">Ploteye</h1>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
             <h2 className="visually-hidden">Ploteye</h2>{' '}
             {/* Add a hidden heading for accessibility */}
-            <div className="bg-darkgray p-4 sm:h-96 h-auto rounded-lg border border-gridBorderColor hover:bg-custom-gray">
+            <div className="bg-darkgray p-4 sm:h-98 h-auto rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <p className="text-light-gray sm:text-lg text-left mt-4">
                 This was an internship project where we collaborated as a team
                 to transform the existing PlotEye web application into a mobile
@@ -25,14 +25,14 @@ export const PlotEyeScreen = () => {
                 everyone involved.
               </p>
             </div>
-            <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
+            <div className="bg-darkgray p-4 h-98 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
                 src=".\src\assets\images\ploteye2.svg"
                 alt="profile picture of david"
               />
             </div>
-            <div className="bg-darkgray p-4 sm:h-96 h-auto rounded-lg border border-gridBorderColor  hover:bg-custom-gray">
+            <div className="bg-darkgray p-4 sm:h-98 h-auto rounded-lg border border-gridBorderColor  hover:bg-custom-gray">
               <div>
                 <div className="flex flex-1 gap-4 flex-wrap">
                   <div
@@ -77,7 +77,7 @@ export const PlotEyeScreen = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
+            <div className="bg-darkgray p-4 h-98 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               {' '}
               <img
                 className="w-full h-full object-cover rounded-lg"

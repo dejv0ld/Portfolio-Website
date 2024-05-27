@@ -6,15 +6,10 @@
   margin: 8rem 1rem 8rem 1.5rem;
 }
 
-.about-heading {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: white;
-  margin-bottom: 1rem;
-}
 
-.about-paragraph {
+
+/* .about-paragraph {
   font-size: 2.5rem;
   color: var(--gray-color);
   text-align: left;
-}
+} */

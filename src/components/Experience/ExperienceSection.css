@@ -5,13 +5,7 @@
 .exp-grid-div:hover {
 background-color: #0e0d0d;
 }
-.experience-heading {
-  color: white;
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-align: left;
-}
+
 
 .experience-sub-heading {
   font-size: 2rem;

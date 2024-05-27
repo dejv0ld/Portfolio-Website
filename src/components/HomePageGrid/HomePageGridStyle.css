@@ -42,7 +42,6 @@
 
 .typewriter-div:hover {
   background-color: #0e0d0d;
-
 }
 
 .typewriter-div > h1 > span {
@@ -69,8 +68,6 @@
   border: 2px solid var(--grid-border-color);
   border-radius: 1rem;
 }
-
-
 
 .grid-div1 {
   position: relative;
@@ -150,7 +147,7 @@ button:hover {
   border-radius: 1rem;
   transition: 0.5s;
   border: 2px solid var(--grid-border-color);
-  }
+}
 
 .bottom-grid-container .custom-card:hover {
   height: 24rem;
@@ -241,19 +238,6 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-  /*   .bottom-grid-container .custom-card {
-    width: 230px;
-    border-radius: 15px;
-  } */
-
-  /*   .bottom-grid-container .custom-card .img-box {
-    width: 185px;
-    border-radius: 10px;
-  } */
-
-
-
-
   .bottom-grid-container .custom-card .custom-content p {
     font-size: 0.8rem;
   }
@@ -272,12 +256,72 @@ button:hover {
     height: 250px;
   }
 
-
   .bottom-grid-container .custom-card .img-box {
     border-radius: 10px;
   }
   .bottom-grid-container .custom-card:hover .img-box {
     border-radius: 10px;
     height: 70%;
+  }
+  .bottom-grid-container .custom-card:nth-child(2) .img-box,
+  .bottom-grid-container .custom-card:nth-child(3) .img-box {
+    width: 220px;
+    border-radius: 10px;
+  }
+
+  .bottom-grid-container .custom-card:nth-child(2) .img-box:hover,
+  .bottom-grid-container .custom-card:nth-child(3) .img-box:hover {
+    width: 200px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bottom-grid-container .custom-card:nth-child(2) .img-box,
+  .bottom-grid-container .custom-card:nth-child(3) .img-box {
+    width: 220px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bottom-grid-container .custom-card:nth-child(2) .img-box,
+  .bottom-grid-container .custom-card:nth-child(3) .img-box {
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .bottom-grid-container .custom-card:nth-child(2) .img-box:hover,
+  .bottom-grid-container .custom-card:nth-child(3) .img-box:hover {
+    width: 70%;
+    border-radius: 10px;
+  }
+
+  .bottom-grid-container .custom-card {
+    width: 100%;
+    max-width: 100%;
+    height: 28rem;
+  }
+  .bottom-grid-container .custom-card:hover .custom-content {
+    top: 10rem;
+    height: 250px;
+  }
+
+  .bottom-grid-container .custom-card .custom-content {
+    top: 24rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .bottom-grid-container .custom-card:nth-child(2) .img-box,
+  .bottom-grid-container .custom-card:nth-child(3) .img-box {
+    width: 200px;
+    border-radius: 10px;
+  }
+
+  .bottom-grid-container .custom-card:nth-child(2) .img-box:hover,
+  .bottom-grid-container .custom-card:nth-child(3) .img-box:hover {
+    width: 200px;
+    border-radius: 10px;
   }
 }

@@ -3,7 +3,7 @@ import './Skills.css';
 export const Skills = () => {
   return (
         <section className="skillsContainer">
-      <h1 className="skills-heading">My Skills</h1>
+      <h1 className="text-5xl sm:text-6xl mb-8 font-bold text-white text-left skills-heading">My Skills</h1>
 
       <div className="scroll" style={{ '--time': '20s' }}>
         <ul className="tagList scroller__inner">

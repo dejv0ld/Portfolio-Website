@@ -6,24 +6,18 @@ export const WebshopScreen = () => {
       <Navbar />
       <main className="max-w-screen-xl mx-auto items-center">
         <section className="m-6">
-          <h1 className="text-white text-5xl mt-10 mb-10 text-left">
-            Webshop
-          </h1>
+          <h1 className="text-4xl sm:text-5xl mb-8 font-bold text-white text-left">Webshop</h1>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
             <h2 className="visually-hidden">Ploteye</h2>{' '}
             {/* Add a hidden heading for accessibility */}
             <div className="bg-darkgray p-4 sm:h-96 h-auto rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <p className="text-light-gray sm:text-lg text-left mt-4">
-                The objective of my portfolio website is to create a
-                comprehensive digital resume that showcases my skills, projects,
-                and professional experience. It is designed to highlight my
-                frontend capabilities as a JavaScript developer and to provide a
-                platform for potential employers and clients to learn more about
-                me. <br></br>
-                <br></br>This portfolio serves as an essential tool for
-                presenting my work and professional identity. The main goals
-                were to design a visually appealing and user-friendly website
-                that clearly communicates my skills and accomplishments.
+                Me and some classmates created this mockup space travel webshop as a fun project. To
+                access the website, users first need to complete a quiz. Once
+                inside, they can add tickets to their cart and proceed to
+                checkout. <br></br><br></br>The idea behind this project was to build something
+                enjoyable while also experimenting with developing a fully
+                functional webshop.
               </p>
             </div>
             <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
@@ -40,7 +34,7 @@ export const WebshopScreen = () => {
                     style={{ border: '0.5px solid #adadad' }}
                     className="rounded-lg pt-2 pb-2 pr-3 pl-3"
                   >
-                    <p className="text-light-gray">React</p>
+                    <p className="text-light-gray">Vue.js</p>
                   </div>
                   <div
                     style={{ border: '0.5px solid #adadad' }}
@@ -69,15 +63,12 @@ export const WebshopScreen = () => {
                   </div>
                 </div>
                 <p className="text-light-gray sm:text-lg text-left mt-4">
-                  I built my portfolio using React for creating dynamic and
-                  responsive user interfaces, and JavaScript to add interactive
-                  functionality. TailwindCSS, combined with CSS, ensures that
-                  the styling is efficient, consistent, and responsive across
-                  different devices.<br></br><br></br> Vite is used for its fast development and
-                  build speeds, providing a smooth and efficient workflow. This
-                  combination of technologies allows me to create a
-                  high-performance, visually appealing, and user-friendly
-                  portfolio website.
+                  We developed this webshop using Vue.js with Vite, JavaScript,
+                  and TailwindCSS. This project served as a valuable learning
+                  experience for us, enhancing our skills in agile development
+                  and teamwork. We managed our codebase with GitHub and held
+                  daily standups to monitor our progress effectively.
+
                 </p>
               </div>
             </div>

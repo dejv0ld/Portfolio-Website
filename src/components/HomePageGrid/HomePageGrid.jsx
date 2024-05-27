@@ -12,6 +12,15 @@ export const HomePageGrid = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [stringIndex, setStringIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const strings = [
     'Fullstack Developer.',
@@ -55,7 +64,7 @@ export const HomePageGrid = () => {
           {' '}
           <img
             className="profile-image"
-            src=".\src\assets\images\Namnlös design (2).jpg"
+            src=".\src\assets\images\profilbild1.jpg"
             alt="Profile picture of DAvid Johnson"
           />
           <h2 className="p-3 text-white">David</h2>
@@ -109,7 +118,7 @@ export const HomePageGrid = () => {
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
         <h2 className="visually-hidden">Projects</h2>{' '}
         {/* Add a hidden heading for accessibility */}
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+        <div className="bg-darkgray p-4 md:h-96 h-auto rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
               src=".\src\assets\images\RepTracker_main2.svg"
@@ -128,11 +137,11 @@ export const HomePageGrid = () => {
             </Link>
           </div>
         </div>
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+        <div className="bg-darkgray p-4 md:h-96 h-auto rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
               className="ploteye-img"
-              src=".\src\assets\images\Ploteye_main.svg"
+              src=".\src\assets\images\Ploteye_main.png"
               alt="profile picture of david"
             ></img>
           </div>
@@ -148,10 +157,10 @@ export const HomePageGrid = () => {
             </Link>
           </div>
         </div>
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+        <div className="bg-darkgray p-4 md:h-96 h-auto rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src=".\src\assets\images\webshop_main.png"
+              src={windowWidth <= 480 ? '.\\src\\assets\\images\\Webshop_main_small.png' : '.\\src\\assets\\images\\webshop_main.png'}
               alt="profile picture of david"
             ></img>
           </div>
@@ -162,13 +171,15 @@ export const HomePageGrid = () => {
               webshop project where the user needed to finish a small quiz to
               get access to the space-travel webshop.
             </p>
-            <Link to="/webshopscreen" className="read-more-link">Read More</Link>
+            <Link to="/webshopscreen" className="read-more-link">
+              Read More
+            </Link>
           </div>
         </div>
-        <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor grid-div custom-card">
+        <div className="bg-darkgray p-4 md:h-96 h-auto rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src=".\src\assets\images\Portfolio_main.png"
+              src={windowWidth <= 480 ? '.\\src\\assets\\images\\Portfolio_main_small.png' : '.\\src\\assets\\images\\Portfolio_main.png'}
               alt="profile picture of david"
             ></img>
           </div>
@@ -178,7 +189,9 @@ export const HomePageGrid = () => {
               I built this portfolio website using React and Tailwind CSS. It is
               a responsive website that showcases my skills and projects.
             </p>
-            <Link to="/portfolioinfoscreen" className="read-more-link">Read More</Link>
+            <Link to="/portfolioinfoscreen" className="read-more-link">
+              Read More
+            </Link>
           </div>
         </div>
       </section>

@@ -4,9 +4,9 @@ import './AboutSection.css';
 export const AboutSection = () => {
   return (
     <section className="about-container">
-      <h2 className="about-heading">About</h2>
+      <h2 className="text-5xl sm:text-6xl mb-8 font-bold text-white text-left about-heading">About</h2>
 
-      <p className="about-paragraph">
+      <p className="text-2xl sm:text-4xl text-light-gray text-left">
         I'm a social, calm, and patient individual with a passion for both the
         outdoors and technology. When I'm not coding, you can find me out on the
         lake fishing, spending quality time with family and friends, or staying
