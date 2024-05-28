@@ -29,7 +29,7 @@ export const PortfolioInfoScreen = () => {
             <div className="bg-darkgray p-4 h-98 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\Portfolio_sub.png"
+                src="./src/assets/images/Portfolio_sub.png"
                 alt="profile picture of david"
               />
             </div>
@@ -82,7 +82,7 @@ export const PortfolioInfoScreen = () => {
               {' '}
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\Portfolio_sub2.png"
+                src="./src/assets/images/Portfolio_sub2.png"
                 alt="profile picture of david"
               />
             </div>

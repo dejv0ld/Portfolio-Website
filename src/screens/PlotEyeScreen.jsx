@@ -6,7 +6,9 @@ export const PlotEyeScreen = () => {
       <Navbar />
       <main className="max-w-screen-xl mx-auto items-center">
         <section className="m-6">
-          <h1 className="text-4xl sm:text-5xl mb-8 font-bold text-white text-left">Ploteye</h1>
+          <h1 className="text-4xl sm:text-5xl mb-8 font-bold text-white text-left">
+            Ploteye
+          </h1>
           <section className="grid grid-cols-1 md:grid-cols-2 gap-4 bottom-grid-container">
             <h2 className="visually-hidden">Ploteye</h2>{' '}
             {/* Add a hidden heading for accessibility */}
@@ -16,19 +18,19 @@ export const PlotEyeScreen = () => {
                 to transform the existing PlotEye web application into a mobile
                 application. The goal of PlotEye is to provide a comprehensive
                 solution for individuals to buy and sell properties without
-                intermediaries. <br></br><br></br>Users can select a plot from the map and click
-                on it to view detailed information, including images and
-                descriptions. They can also place bids directly through the app.
-                Additionally, users have the capability to list their own plots
-                for sale. The app aims to simplify the real
-                estate process, making it more accessible and user-friendly for
-                everyone involved.
+                intermediaries. <br></br>
+                <br></br>Users can select a plot from the map and click on it to
+                view detailed information, including images and descriptions.
+                They can also place bids directly through the app. Additionally,
+                users have the capability to list their own plots for sale. The
+                app aims to simplify the real estate process, making it more
+                accessible and user-friendly for everyone involved.
               </p>
             </div>
             <div className="bg-darkgray p-4 h-98 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\ploteye2.svg"
+                src="./src/assets/images/ploteye2.svg"
                 alt="profile picture of david"
               />
             </div>
@@ -70,10 +72,11 @@ export const PlotEyeScreen = () => {
                 <p className="text-light-gray sm:text-lg text-left mt-4">
                   Utilized React Native for cross-platform development and
                   JavaScript for building interactive user interfaces. Employed
-                  Redux for efficient state management and data fetching.<br></br><br></br> For
-                  the backend, Express was used for building the server-side
-                  logic and MongoDB for its scalable and flexible database
-                  solutions.
+                  Redux for efficient state management and data fetching.
+                  <br></br>
+                  <br></br> For the backend, Express was used for building the
+                  server-side logic and MongoDB for its scalable and flexible
+                  database solutions.
                 </p>
               </div>
             </div>
@@ -81,7 +84,7 @@ export const PlotEyeScreen = () => {
               {' '}
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\ploteye1 (1).svg"
+                src="./src/assets/images/ploteye1 (1).svg"
                 alt="profile picture of david"
               />
             </div>

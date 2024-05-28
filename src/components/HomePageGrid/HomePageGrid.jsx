@@ -64,7 +64,7 @@ export const HomePageGrid = () => {
           {' '}
           <img
             className="profile-image"
-            src=".\src\assets\images\profilbild1.jpg"
+            src="./src/assets/images/profilbild1.jpg"
             alt="Profile picture of DAvid Johnson"
           />
           <h2 className="p-3 text-white">David</h2>
@@ -110,7 +110,7 @@ export const HomePageGrid = () => {
           </div>
           <img
             className="coding-image"
-            src=".\src\assets\images\coding.jpg"
+            src="./src/assets/images/coding.jpg"
             alt="binary code, ones and zeros"
           />
         </div>
@@ -121,7 +121,7 @@ export const HomePageGrid = () => {
         <div className="bg-darkgray p-4 md:h-96 h-auto rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src=".\src\assets\images\RepTracker_main2.svg"
+              src="./src/assets/images/RepTracker_main2.svg"
               alt="profile picture of david"
             ></img>
           </div>
@@ -141,7 +141,7 @@ export const HomePageGrid = () => {
           <div className="img-box">
             <img
               className="ploteye-img"
-              src=".\src\assets\images\Ploteye_main.png"
+              src="./src/assets/images/Ploteye_main.png"
               alt="profile picture of david"
             ></img>
           </div>
@@ -160,7 +160,7 @@ export const HomePageGrid = () => {
         <div className="bg-darkgray p-4 md:h-96 h-auto rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src={windowWidth <= 480 ? '.\\src\\assets\\images\\Webshop_main_small.png' : '.\\src\\assets\\images\\webshop_main.png'}
+              src={windowWidth <= 480 ? './/src//assets//images//Webshop_main_small.png' : './/src//assets//images//webshop_main.png'}
               alt="profile picture of david"
             ></img>
           </div>
@@ -179,7 +179,7 @@ export const HomePageGrid = () => {
         <div className="bg-darkgray p-4 md:h-96 h-auto rounded-lg border border-gridBorderColor grid-div custom-card">
           <div className="img-box">
             <img
-              src={windowWidth <= 480 ? '.\\src\\assets\\images\\Portfolio_main_small.png' : '.\\src\\assets\\images\\Portfolio_main.png'}
+              src={windowWidth <= 480 ? './/src//assets//images//Portfolio_main_small.png' : './/src//assets//images//Portfolio_main.png'}
               alt="profile picture of david"
             ></img>
           </div>

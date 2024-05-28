@@ -248,6 +248,10 @@ button:hover {
   .bottom-grid-container .custom-card:hover {
     height: 24rem;
   }
+
+  .typewriter-div > h1 > span {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 948px) {

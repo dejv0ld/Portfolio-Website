@@ -35,7 +35,7 @@ export const RepTracker = () => {
             <div className="bg-darkgray p-4 h-98 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\RepTracker_sub3.png"
+                src="./src/assets/images/RepTracker_sub3.png"
                 alt="profile picture of david"
               ></img>
             </div>
@@ -93,7 +93,7 @@ export const RepTracker = () => {
             <div className="bg-darkgray p-4 h-98 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src=".\src\assets\images\RepTracker_sub4.png"
+                src="./src/assets/images/RepTracker_sub4.png"
                 alt="profile picture of david"
               ></img>
             </div>
