@@ -31,7 +31,7 @@ export const Navbar = () => {
         <div className="logo">
           <img
             className="logo-image"
-            src="./src/assets/images/Logo.png"
+            src="/images/Logo.png"
             alt="Your Company"
           />
         </div>

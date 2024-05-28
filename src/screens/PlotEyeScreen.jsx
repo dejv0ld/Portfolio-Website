@@ -30,7 +30,7 @@ export const PlotEyeScreen = () => {
             <div className="bg-darkgray p-4 h-98 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src="./src/assets/images/ploteye2.svg"
+                src="/images/ploteye2.svg"
                 alt="profile picture of david"
               />
             </div>
@@ -84,7 +84,7 @@ export const PlotEyeScreen = () => {
               {' '}
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src="./src/assets/images/ploteye1 (1).svg"
+                src="/images/ploteye1 (1).svg"
                 alt="profile picture of david"
               />
             </div>

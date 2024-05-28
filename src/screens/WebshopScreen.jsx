@@ -26,7 +26,7 @@ export const WebshopScreen = () => {
             <div className="bg-darkgray p-4 h-96 rounded-lg border border-gridBorderColor hover:bg-custom-gray">
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src="./src/assets/images/webshop_sub.png"
+                src="/images/webshop_sub.png"
                 alt="profile picture of david"
               />
             </div>
@@ -78,7 +78,7 @@ export const WebshopScreen = () => {
               {' '}
               <img
                 className="w-full h-full object-cover rounded-lg"
-                src="./src/assets/images/webshop_sub2.png"
+                src="/images/webshop_sub2.png"
                 alt="profile picture of david"
               />
             </div>
