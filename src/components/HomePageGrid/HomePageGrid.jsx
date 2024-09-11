@@ -69,7 +69,17 @@ export const HomePageGrid = () => {
           />
           <h2 className="p-3 text-white">David</h2>
           <div className="flex gap-4 flex-grow-1 justify-center">
-            <BsLinkedin className="icon" size={30} color="white" />
+            <BsLinkedin
+              className="icon"
+              size={30}
+              color="white"
+              onClick={() => {
+                window.open(
+                  'https://www.linkedin.com/in/david-johnson-79b9b524a/',
+                  '_blank'
+                );
+              }}
+            />
             <BiLogoGmail
               className="icon"
               size={30}
